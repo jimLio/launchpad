@@ -14,10 +14,4 @@ Created by [TechnoTim](https://technotim.live) and updated by the community with
 
 ► YouTube https://www.youtube.com/technotimlive
 
-► Twitch https://www.twitch.tv/TechnoTim
-
-► Twitter https://twitter.com/TechnoTimLive
-
-► Discord https://l.technotim.live/discord
-
 ► GitHub https://github.com/timothystewart6
