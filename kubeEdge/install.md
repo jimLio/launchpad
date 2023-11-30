@@ -70,9 +70,10 @@ sudo keadm gettoken --kube-config=/home/ubuntu/.kube/config
 Uninstall keadm (optional)
 > keadm reset --kube-config=$HOME/.kube/config
 
-4. KubeEdge worker node
-> keadm join --cloudcore-ipport="master-ip":10000 --kubeedge-version=v1.12.6 --token=$token 
+4. KubeEdge worker node (copy token from master) [cgroupdriver optional]
+> sudo keadm join --cloudcore-ipport="master-ip":10000 --kubeedge-version=v1.12.6 --remote-runtime-endpoint=unix:///var/run/containerd/containerd.sock --runtimetype=remote --cgroupdriver=systemd --edgenode-name=edgenode --token=$token 
 ---
 ### Debugging
 Edge node
 > journalctl -u edgecore.service-b | tail
+> sudo journalctl -f -u edgecore
